@@ -1,0 +1,29 @@
+.app-container {
+  display: flex;
+  gap: 18px;
+  background-color: #02306D;
+  min-height: 100vh; 
+  height: auto;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.box-left {
+  width: 30%;
+}
+
+.box-center {
+  width: 30%;
+}
+
+.box-right {
+  width: 30%;
+}
+
+.title {
+  color: white;
+  font-size: 10px;
+  text-align: center;
+}
+
+
