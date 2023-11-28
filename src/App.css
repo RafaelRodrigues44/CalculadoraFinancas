@@ -2,28 +2,39 @@
   display: flex;
   gap: 18px;
   background-color: #02306D;
-  min-height: 100vh; 
+  min-height: 100vh;
   height: auto;
   padding-right: 20px;
   padding-top: 20px;
 }
 
-.box-left {
-  width: 30%;
-}
-
-.box-center {
-  width: 30%;
-}
-
+.box-left,
+.box-center,
 .box-right {
   width: 30%;
 }
 
 .title {
   color: white;
-  font-size: 10px;
+  font-size: 16px; 
   text-align: center;
+  transition: opacity 0.5s ease-in-out;
 }
 
+.visible {
+  opacity: 1;
+}
 
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.toggle-title-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
